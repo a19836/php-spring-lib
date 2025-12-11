@@ -1,0 +1,1000 @@
+Array
+(
+    [0] => Array
+        (
+            [var] => Array
+                (
+                    [name] => phpframework_obj_name
+                    [value] => PHPFrameWork
+                )
+
+        )
+
+    [1] => Array
+        (
+            [var] => Array
+                (
+                    [name] => message_vars
+                    [value] => Array
+                        (
+                            [messages_path] => /var/www/html/phpframework/trunk/other/data/messages/
+                            [messages_modules_file_path] => /var/www/html/phpframework/trunk/other/data/messages/modules.xml
+                            [messages_cache_path] => /var/www/html/livingroop/default/tmp/cache/layer/sysmessages/
+                            [messages_module_cache_maximum_size] => 
+                            [messages_default_cache_ttl] => 31536000
+                            [messages_default_cache_type] => php
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [var] => Array
+                (
+                    [name] => log_vars
+                    [value] => Array
+                        (
+                            [log_level] => <?php echo $GLOBALS["log_level"]; ?>
+                            [log_echo_active] => <?php echo $GLOBALS["log_echo_active"]; ?>
+                            [log_file_path] => <?php echo $GLOBALS["log_file_path"]; ?>
+                            [log_css] => body {
+					overflow:overlay;
+					background-color:#F0F1F5;
+					font-family:verdana,arial,courier;
+					font-size:11px;
+				}
+				.log_handler {
+					font-style:italic;
+					
+					color:#83889E;
+					/*background-color:#F8F9FC;
+					border:1px outset #BFC4DB;
+					border-radius:5px;*/
+					margin:10px;
+					padding:5px;
+				}
+				
+				.log_handler .message {
+					color:#333;
+					position:relative;
+				}
+				.log_handler .message .exception {
+					color:#FF0000;
+				}
+				.log_handler .message .error {
+					color:#990000;
+				}
+				.log_handler .message .info {
+					color:#000099;
+				}
+				.log_handler .message .debug {
+					color:#009999;
+				}
+				.log_handler .message .message {
+					color:#009900;
+				}
+				.log_handler .message .toggle_trace {
+					margin-right:10px;
+					display:inline-block;
+					font-style:normal;
+					font-weight:bold;
+					cursor:pointer;
+				}
+				.log_handler .message p {
+					margin:0;
+					padding:0;
+				}
+				.log_handler .trace {
+					margin-top:15px;
+					font-size:10px;
+				}
+				.log_handler .trace.hidden {
+					display:none;
+				}
+				.log_handler .trace .exception {
+					white-space:nowrap;
+				}
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [var] => Array
+                (
+                    [name] => presentation_vars
+                    [value] => Array
+                        (
+                            [presentations_path] => /var/www/html/phpframework/trunk/app/__system/layer/presentation/
+                            [presentations_modules_file_path] => /var/www/html/phpframework/trunk/app/__system/layer/presentation/modules.xml
+                            [presentation_configs_path] => src/config/
+                            [presentation_utils_path] => src/util/
+                            [presentation_controllers_path] => src/controller/
+                            [presentation_entities_path] => src/entity/
+                            [presentation_views_path] => src/view/
+                            [presentation_templates_path] => src/template/
+                            [presentation_blocks_path] => src/block/
+                            [presentation_modules_path] => src/module/
+                            [presentation_webroot_path] => webroot/
+                            [presentation_common_project_name] => common
+                            [presentation_common_path] => /var/www/html/phpframework/trunk/app/__system/layer/presentation/common/
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [var] => Array
+                (
+                    [name] => dispatcher_cache_vars
+                    [value] => Array
+                        (
+                            [dispatcher_caches_path] => src/config/cache/
+                            [dispatchers_cache_file_name] => dispatcher.xml
+                            [dispatchers_cache_path] => /var/www/html/livingroop/default/tmp/cache/layer/syspresentation/dispatcher/
+                            [dispatchers_default_cache_ttl] => 600
+                            [dispatchers_default_cache_type] => text
+                            [dispatchers_module_cache_maximum_size] => 
+                        )
+
+                )
+
+        )
+
+    [5] => Array
+        (
+            [var] => Array
+                (
+                    [name] => presentation_cache_vars
+                    [value] => Array
+                        (
+                            [presentation_caches_path] => src/config/cache/
+                            [presentations_cache_file_name] => pages.xml
+                            [presentations_cache_path] => /var/www/html/livingroop/default/tmp/cache/layer/syspresentation/pages/
+                            [presentations_default_cache_ttl] => 600
+                            [presentations_default_cache_type] => text
+                            [presentations_module_cache_maximum_size] => 
+                        )
+
+                )
+
+        )
+
+    [6] => Array
+        (
+            [var] => Array
+                (
+                    [name] => presentation_multiple_cms_cache_vars
+                    [value] => Array
+                        (
+                            [presentation_cms_module_caches_path] => src/config/cache/
+                            [presentations_cms_module_cache_file_name] => modules.xml
+                            [presentations_cms_module_cache_path] => /var/www/html/livingroop/default/tmp/cache/layer/syspresentation/modules/
+                            [presentations_cms_module_default_cache_ttl] => 600
+                            [presentations_cms_module_default_cache_type] => text
+                            [presentations_cms_module_module_cache_maximum_size] => 
+                            [presentation_cms_block_caches_path] => src/config/cache/
+                            [presentations_cms_block_cache_file_name] => blocks.xml
+                            [presentations_cms_block_cache_path] => /var/www/html/livingroop/default/tmp/cache/layer/syspresentation/blocks/
+                            [presentations_cms_block_default_cache_ttl] => 600
+                            [presentations_cms_block_default_cache_type] => text
+                            [presentations_cms_block_module_cache_maximum_size] => 
+                        )
+
+                )
+
+        )
+
+    [7] => Array
+        (
+            [var] => Array
+                (
+                    [name] => router_vars
+                    [value] => Array
+                        (
+                            [routers_path] => src/config/
+                            [routers_file_name] => router.xml
+                        )
+
+                )
+
+        )
+
+    [8] => Array
+        (
+            [var] => Array
+                (
+                    [name] => phpframework_obj_name
+                    [value] => PHPFrameWork
+                )
+
+        )
+
+    [9] => Array
+        (
+            [var] => Array
+                (
+                    [name] => message_vars
+                    [value] => Array
+                        (
+                            [messages_path] => /var/www/html/phpframework/trunk/other/data/messages/
+                            [messages_modules_file_path] => /var/www/html/phpframework/trunk/other/data/messages/modules.xml
+                            [messages_cache_path] => /var/www/html/livingroop/default/tmp/cache/layer/sysmessages/
+                            [messages_module_cache_maximum_size] => 
+                            [messages_default_cache_ttl] => 31536000
+                            [messages_default_cache_type] => php
+                        )
+
+                )
+
+        )
+
+    [10] => Array
+        (
+            [var] => Array
+                (
+                    [name] => log_vars
+                    [value] => Array
+                        (
+                            [log_level] => <?php echo $GLOBALS["log_level"]; ?>
+                            [log_echo_active] => <?php echo $GLOBALS["log_echo_active"]; ?>
+                            [log_file_path] => <?php echo $GLOBALS["log_file_path"]; ?>
+                            [log_css] => body {
+					overflow:overlay;
+					background-color:#F0F1F5;
+					font-family:verdana,arial,courier;
+					font-size:11px;
+				}
+				.log_handler {
+					font-style:italic;
+					
+					color:#83889E;
+					/*background-color:#F8F9FC;
+					border:1px outset #BFC4DB;
+					border-radius:5px;*/
+					margin:10px;
+					padding:5px;
+				}
+				
+				.log_handler .message {
+					color:#333;
+					position:relative;
+				}
+				.log_handler .message .exception {
+					color:#FF0000;
+				}
+				.log_handler .message .error {
+					color:#990000;
+				}
+				.log_handler .message .info {
+					color:#000099;
+				}
+				.log_handler .message .debug {
+					color:#009999;
+				}
+				.log_handler .message .message {
+					color:#009900;
+				}
+				.log_handler .message .toggle_trace {
+					margin-right:10px;
+					display:inline-block;
+					font-style:normal;
+					font-weight:bold;
+					cursor:pointer;
+				}
+				.log_handler .message p {
+					margin:0;
+					padding:0;
+				}
+				.log_handler .trace {
+					margin-top:15px;
+					font-size:10px;
+				}
+				.log_handler .trace.hidden {
+					display:none;
+				}
+				.log_handler .trace .exception {
+					white-space:nowrap;
+				}
+                        )
+
+                )
+
+        )
+
+    [11] => Array
+        (
+            [var] => Array
+                (
+                    [name] => ibatis_vars
+                    [value] => Array
+                        (
+                            [dal_path] => /var/www/html/phpframework/trunk/app/__system/layer/dataaccess/ibatis/
+                            [dal_modules_file_path] => /var/www/html/phpframework/trunk/app/__system/layer/dataaccess/ibatis/modules.xml
+                            [dal_services_file_name] => services.xml
+                        )
+
+                )
+
+        )
+
+    [12] => Array
+        (
+            [var] => Array
+                (
+                    [name] => ibatis_cache_vars
+                    [value] => Array
+                        (
+                            [dal_cache_file_name] => cache.xml
+                            [dal_cache_path] => /var/www/html/livingroop/default/tmp/cache/layer/sysdataaccess/ibatis/
+                            [dal_default_cache_ttl] => 600
+                            [dal_module_cache_maximum_size] => 
+                        )
+
+                )
+
+        )
+
+    [13] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => MessageHandler
+                    [path] => org.phpframework.message.MessageHandler
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => message_vars
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [14] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => UserCacheHandler
+                    [path] => org.phpframework.cache.user.filesystem.FileSystemUserCacheHandler
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => rootPath
+                                    [value] => /var/www/html/livingroop/default/tmp/cache/sysusercache/
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [15] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => PresentationDispatcherCacheHandler
+                    [path] => org.phpframework.dispatcher.DispatcherCacheHandler
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => dispatcher_cache_vars
+                                )
+
+                            [1] => Array
+                                (
+                                    [reference] => presentation_vars
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [16] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => BusinessLogicBrokerClient
+                    [path] => org.phpframework.broker.client.local.LocalBusinessLogicBrokerClient
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => PHPFrameWorkObjName
+                                    [reference] => phpframework_obj_name
+                                )
+
+                        )
+
+                    [functions] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => addBeansFilePath
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [value] => /var/www/html/phpframework/trunk/app/__system/config/bean/business_logic_layer.xml
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => setBeanName
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [value] => BusinessLogicBrokerServer
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [17] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => PresentationLayer
+                    [path] => org.phpframework.layer.presentation.PresentationLayer
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => presentation_vars
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => cacheLayer
+                                    [reference] => PresentationCacheLayer
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => PHPFrameWorkObjName
+                                    [reference] => phpframework_obj_name
+                                )
+
+                        )
+
+                    [functions] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => addBroker
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [reference] => BusinessLogicBrokerClient
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [18] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => PresentationCacheLayer
+                    [path] => org.phpframework.layer.cache.PresentationCacheLayer
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => PresentationLayer
+                                )
+
+                            [1] => Array
+                                (
+                                    [reference] => presentation_cache_vars
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [19] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => EVC
+                    [path] => org.phpframework.layer.presentation.evc.EVC
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => presentationLayer
+                                    [reference] => PresentationLayer
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => defaultController
+                                    [value] => index
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [20] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => PresentationCMSLayer
+                    [path] => org.phpframework.layer.presentation.cms.CMSLayer
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => EVC
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => cacheLayer
+                                    [reference] => PresentationMultipleCMSCacheLayer
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [21] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => PresentationMultipleCMSCacheLayer
+                    [path] => org.phpframework.layer.presentation.cms.cache.MultipleCMSCacheLayer
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => PresentationCMSLayer
+                                )
+
+                            [1] => Array
+                                (
+                                    [reference] => presentation_multiple_cms_cache_vars
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [22] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => PresentationRouter
+                    [path] => org.phpframework.router.PresentationRouter
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => router_vars
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => presentationLayer
+                                    [reference] => PresentationLayer
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [23] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => EVCDispatcher
+                    [path] => org.phpframework.dispatcher.EVCDispatcher
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => router
+                                    [reference] => PresentationRouter
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => EVC
+                                    [reference] => EVC
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [24] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => MessageHandler
+                    [path] => org.phpframework.message.MessageHandler
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => message_vars
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [25] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => UserCacheHandler
+                    [path] => org.phpframework.cache.user.filesystem.FileSystemUserCacheHandler
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => rootPath
+                                    [value] => /var/www/html/livingroop/default/tmp/cache/sysusercache/
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [26] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => DBBrokerClient
+                    [path] => org.phpframework.broker.client.local.LocalDBBrokerClient
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => PHPFrameWorkObjName
+                                    [reference] => phpframework_obj_name
+                                )
+
+                        )
+
+                    [functions] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => addBeansFilePath
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [value] => /var/www/html/phpframework/trunk/app/__system/config/bean/db_layer.xml
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => setBeanName
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [value] => DBBrokerServer
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [27] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => DBBrokerClientAux
+                    [path] => org.phpframework.broker.client.local.LocalDBBrokerClient
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => PHPFrameWorkObjName
+                                    [reference] => phpframework_obj_name
+                                )
+
+                        )
+
+                    [functions] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => addBeansFilePath
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [value] => /var/www/html/phpframework/trunk/app/__system/config/bean/db_layer.xml
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => setBeanName
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [value] => DBBrokerServerAux
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [28] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => IBatisClient
+                    [path] => org.phpframework.sqlmap.ibatis.IBatisClient
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                )
+
+        )
+
+    [29] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => IbatisDataAccessLayer
+                    [path] => org.phpframework.layer.dataaccess.IbatisDataAccessLayer
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => IBatisClient
+                                )
+
+                            [1] => Array
+                                (
+                                    [reference] => ibatis_vars
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => cacheLayer
+                                    [reference] => IbatisDataAccessCacheLayer
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => PHPFrameWorkObjName
+                                    [reference] => phpframework_obj_name
+                                )
+
+                        )
+
+                    [functions] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => addBroker
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [reference] => DBBrokerClient
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => addBroker
+                                    [parameters] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [reference] => DBBrokerClientAux
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [30] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => IbatisDataAccessBrokerServer
+                    [path] => org.phpframework.broker.server.local.LocalIbatisDataAccessBrokerServer
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => IbatisDataAccessLayer
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [31] => Array
+        (
+            [bean] => Array
+                (
+                    [name] => IbatisDataAccessCacheLayer
+                    [path] => org.phpframework.layer.cache.DataAccessCacheLayer
+                    [path_prefix] => /var/www/html/phpframework/trunk/app/lib/
+                    [constructor_args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => IbatisDataAccessLayer
+                                )
+
+                            [1] => Array
+                                (
+                                    [reference] => ibatis_cache_vars
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [32] => Array
+        (
+            [function] => Array
+                (
+                    [name] => addBroker
+                    [parameters] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => IbatisDataAccessBrokerServer
+                                )
+
+                            [1] => Array
+                                (
+                                    [value] => ibatis
+                                )
+
+                        )
+
+                    [reference] => PresentationLayer
+                )
+
+        )
+
+    [33] => Array
+        (
+            [function] => Array
+                (
+                    [name] => setCMSLayer
+                    [parameters] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [reference] => PresentationCMSLayer
+                                )
+
+                        )
+
+                    [reference] => EVC
+                )
+
+        )
+
+)

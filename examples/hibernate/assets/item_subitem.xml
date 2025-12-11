@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<sql_mapping>
+	
+	<import><?php echo $app_path; ?>assets/import_1.xml</import>
+		
+	<class name="SimpleItemObj" table="item">
+	</class>
+	
+	<class name="ItemObj" table="item" extends="root.examples.hibernate.assets.dao.MyItemHbnModel">
+		
+		<import relative="1">import_2.xml</import>
+		
+		<id column="id">
+			<generator type="increment" />
+		</id>
+		
+		<!--parameter_class>object.php.HashMap</parameter_class-->
+		<parameter_map>
+			<parameter input_name="pk_id" output_name="id" input_type="object.php.Primitive(int)" output_type="object.db.DBPrimitive(int)" mandatory="0" />
+			<parameter input_name="name" output_name="title" input_type="object.php.Primitive(string)" output_type="object.db.DBPrimitive(varchar)" />
+			<parameter input_name="status" output_name="status" input_type="object.php.Primitive(int)" output_type="object.db.DBPrimitive(int)" mandatory="0" />
+		</parameter_map>
+		
+		<!--result_class>root.examples.ibatis.assets.dao.MyItem</result_class-->
+		<result_map>
+			<result output_name="desc" input_name="name" output_type="object.php.MyString" input_type="object.db.DBPrimitive(varchar)" mandatory="0" />
+			<result output_name="is_valid" input_name="status" output_type="object.php.Primitive(int)" input_type="object.db.DBPrimitive(int)" mandatory="0" />
+		</result_map>
+		
+		<relationships>
+			<import relative="1">import_3.xml</import>
+			
+			<!--result_class>root.examples.ibatis.assets.dao.MyItemResult</result_class>
+			<parameter_class>root.examples.ibatis.assets.dao.MyItem</parameter_class>
+			
+			<parameter_map id="SubItemsParameterMap" class="root.examples.ibatis.assets.dao.ItemTest">
+				<parameter output_name="Id" input_name="id" output_type="object.php.Primitive(int)" input_type="object.db.DBPrimitive(int)" />
+				<parameter output_name="itemId" input_name="item_id" output_type="object.php.Primitive(int)" input_type="object.db.DBPrimitive(int)" />
+				<parameter output_name="title" input_name="title" output_type="object.php.MyString" input_type="object.db.DBPrimitive(varchar)" />
+			</parameter_map>
+			
+			<result_map id="SubItemsResultMap" class="root.examples.ibatis.assets.dao.ItemTest">
+				<result output_name="Id" input_name="id" output_type="object.php.Primitive(int)" input_type="object.db.DBPrimitive(int)" />
+				<result output_name="itemId" input_name="item_id" output_type="object.php.Primitive(int)" input_type="object.db.DBPrimitive(int)" />
+				<result output_name="title" input_name="title" output_type="object.php.MyString" input_type="object.db.DBPrimitive(varchar)" />
+			</result_map-->
+			
+			<result_map id="SubItemsResultMap" class="root.examples.ibatis.assets.dao.ItemTest">
+				<result output_name="Id" input_name="id" output_type="object.php.Primitive(int)" input_type="object.db.DBPrimitive(int)" />
+				<result output_name="itemId" input_name="item_id" output_type="object.php.Primitive(int)" input_type="object.db.DBPrimitive(int)" />
+				<result output_name="title" input_name="title" output_type="object.php.MyString" input_type="object.db.DBPrimitive(varchar)" />
+			</result_map>
+			
+			<one_to_many name="sub_items" result_map="SubItemsResultMap">
+				<attribute column="*" table="sub_item" />
+				<attribute column="title" table="sub_item" name="nameXXX" />
+				
+				<key pcolumn="id" fcolumn="item_id" ftable="sub_item" />
+				
+				<condition column="status" table="item" value="1" />
+				
+				<group_by column="id" table="item" />
+				
+				<sort column="title" table="sub_item" order="asc" />
+				<sort column="id" order="desc" />
+			
+				<limit>100</limit>
+				<start value="0" />
+			</one_to_many>
+			
+			<one_to_one name="sub_item" result_map="SubItemsResultMap">
+				<attribute column="*" table="sub_item" />
+				
+				<key pcolumn="id" fcolumn="item_id" ftable="sub_item" />
+				
+				<condition column="status" table="item" value="1" />
+			
+				<limit>1</limit>
+				<start>0</start>
+			</one_to_one>
+		</relationships>
+		
+		<queries>
+			<import relative="1">import_4.xml</import>
+			
+			<select id="select_all_by_status">
+				select * from item where status=#status#
+			</select>
+		</queries>
+	</class>
+	
+	<class name="SubItemObj" table="sub_item" extends="root.examples.hibernate.assets.dao.MySubItemHbnModel">
+		<id column="id" />
+		
+		<result_class>root.examples.ibatis.assets.dao.MySubItem</result_class>
+		
+		<relationships>
+			<many_to_one name="item" result_class="root.examples.ibatis.assets.dao.MyItem">
+				<key pcolumn="item_id" fcolumn="id" ftable="item" />
+			</many_to_one>
+		</relationships>
+		
+		<queries>
+			<select id="select_all_by_item">
+				select * from sub_item where item_id=#item_id#
+			</select>
+		</queries>
+	</class>
+	
+	<class name="ItemObjNotRegistered" table="item" extends="root.examples.hibernate.assets.dao.MyItemHbnModel">
+	</class>
+</sql_mapping>

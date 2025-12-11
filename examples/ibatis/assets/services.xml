@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<services>
+		<service alias="get_my_item" query="select_item" />
+		<service alias="get_my_item_simple" query="select_item_simple" />
+	</services>
+</beans>

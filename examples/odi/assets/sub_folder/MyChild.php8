@@ -1,0 +1,9 @@
+<?php
+namespace SomeNS\A\b;
+
+include_once __DIR__ . "/Child.php";
+
+class ChildWithNS extends \Child {
+	
+}
+?>

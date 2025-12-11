@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="Person5" path="Person" extend="Person2" path_prefix="<?= $app_path; ?>assets/">
+		<property name="age" value="50" />
+	</bean>
+</beans>

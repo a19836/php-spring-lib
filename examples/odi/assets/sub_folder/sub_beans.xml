@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<import relative="1">other_beans.xml</import>
+	
+	<!-- List var -->
+	<var name="props">
+		<list>
+			<item name="a"><![CDATA[<?php echo __DIR__; ?>]]></item>
+			<item name="b"></item>
+			<item name="c"><![CDATA[<?php echo 365 * 24 * 60 * 60; ?>]]></item>
+			<item name="d">php</item>
+			<item name="e"><![CDATA[<?= $my_name; ?>]]></item>
+			<item name="f" value="foo" />
+			<item name="g"><![CDATA[&lt;?php echo isset($GLOBALS["app_path"] ) ? $GLOBALS["app_path"] : ""; ?&gt;]]></item>
+			<item name="h"><![CDATA[
+	body {
+		background-color:red;
+		background-image:url(<?= $app_path ?>assets/img/xx.png);
+		font-family:verdana,arial,courier;
+		font-size:11px;
+	}
+			]]></item>
+		</list>
+	</var>
+</beans>

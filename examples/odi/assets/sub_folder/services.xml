@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="PersonService" path="Person" extend="Person1" path_prefix="<?= $app_path; ?>assets/"></bean>
+	
+	<services>
+		<service id="init_default_person" constructor="PersonService" function="initDefault" />
+		<service id="define_food" constructor="PersonService" function="eat" />
+		<service id="define_age" constructor="Person1" function="setAge" />
+		<service id="test" function="foo" />
+	</services>
+</beans>

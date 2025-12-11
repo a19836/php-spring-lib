@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<import relative="1">sub_folder/sub_beans.xml</import>
+	
+	<!-- Simple var -->
+	<var name="female_gender">female</var>
+	<var name="male_gender">male</var>
+	
+	<!-- List var -->
+	<var name="food">
+		<list>
+			<item>potato</item>
+			<item>carrot</item>
+		</list>
+	</var>
+	
+	<!-- Simple Bean -->
+	<bean name="Person1" path="Person" path_prefix="<?= $app_path; ?>assets/"></bean>
+	
+	<!-- Beans with constructor args, namespace, class name and extension -->
+	<bean name="Child1" namespace="SomeNS\A\b" class_name="ChildWithNS" path="assets.sub_folder.MyChild" path_prefix="<?= $app_path; ?>" extension="php8" bean_group="children">
+		<constructor_arg value="2024-11-22" />
+	</bean>
+	
+	<bean name="Person2" path="Person" path_prefix="<?php echo $app_path;?>assets/">
+		<constructor_arg>FEMALE</constructor_arg>
+	</bean>
+	
+	<!-- Bean with properties -->
+	<bean name="Child2" path="Child" path_prefix="&lt;?php echo $app_path;?&gt;assets/sub_folder/" bean_group="children">
+		<property name="dob"><?php echo date("Y-d-m", strtotime("10 April 2000")); ?></property>
+		<property name="props" reference="props" />
+	</bean>
+	
+	<!-- Bean with extends -->
+	<bean name="Child3" path="Child" extend="Child2" path_prefix="assets/sub_folder/" bean_group="children"></bean>
+	
+	<!-- Bean with functions -->
+	<bean name="Person3" path="assets.Person" path_prefix="<?= $app_path; ?>">
+		<function name="eat">
+			<parameter reference="food" />
+		</function>
+	</bean>
+	
+	<!-- Bean with all -->
+	<bean name="Person4" path="root.examples.odi.assets.Person">
+		<constructor_arg reference="male_gender" />
+		<constructor_arg value="15" />
+		
+		<property name="age" value="30" />
+		<property name="gender" reference="female_gender" />
+		
+		<function name="eat">
+			<parameter reference="food" />
+		</function>
+		<function name="eat">
+			<parameter value="orange" />
+		</function>
+		<function name="eat">
+			<parameter>apple</parameter>
+		</function>
+	</bean>
+	
+	<!-- function -->
+	<function name="eat" reference="Person2" namespace="">
+		<parameter value="beer" />
+	</function>
+</beans>

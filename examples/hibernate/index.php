@@ -22,12 +22,36 @@ echo $style;
 echo '<h1>PHP Spring Lib - Hibernate</h1>
 <p>Spring Hibernate - create ORM and DAO objects through XML</p>
 <div class="note">
-		<span>
-		Learn how to use Spring/Hibernate-style concepts in PHP by creating ORM (Object-Relational-Mapping) and DAO (Data-Access-Objects) objects through XML configuration files.<br/>
-		This library is inspired by the Hibernate ORM and provides a unified, streamlined way to manage database operations using dependency injection, transaction management, and object–relational mapping.<br/>
-		Through XML nodes, you can map a PHP object to a database table and automatically inherit several methods for interacting with that table.<br/>
-		You can also extend these methods with custom SQL queries and additional features.
-		</span>
+	<span>
+	Learn how to use Spring/Hibernate-style concepts in PHP by creating ORM (Object-Relational-Mapping) and DAO (Data-Access-Objects) objects through XML configuration files.<br/>
+	This library is inspired by the Hibernate ORM and provides a unified, streamlined way to manage database operations using dependency injection, transaction management, and object–relational mapping.<br/>
+	Through XML nodes, you can map a PHP object to a database table and automatically inherit several methods for interacting with that table.<br/>
+	You can also extend these methods with custom SQL queries and additional features.
+	</span>
+
+	<div class="features">
+		<h2>Features:</h2>
+		<ul>
+			<li>Map ORM objects to database tables using XML-based definitions for clean and structured management.</li>
+			<li>Organize ORM object definitions across multiple XML files and folders.</li>
+			<li>Include ORM definition files inside other ORM files for modular, extensible configurations.</li>
+			<li>Group ORM objects by application modules, placing each module or table in its own XML file or folder, and load only the ORM objects required for that module.</li>
+			<li>Separate ORM definitions from the database layer, allowing the same ORM object to be reused across different database engines.</li>
+			<li>Map ORM objects to PHP classes, automatically providing methods for interacting with the database.</li>
+			<li>Extend default ORM behavior with custom SQL queries and additional methods.</li>
+			<li>Import iBatis XML files directly into ORM objects for hybrid SQL/ORM workflows.</li>
+			<li>Define primary keys and configure how they are generated using XML definitions.</li>
+			<li>Define relationships to foreign tables through XML, enabling structured access to related records.</li>
+			<li>Filter and refine relationships using conditions, sorting options, limits, and other XML-defined parameters.</li>
+			<li>Extend ORM objects with additional SQL queries defined in XML.</li>
+			<li>Filter and validate input data using XML-defined parameter maps, where attribute names and types can be customized.</li>
+			<li>Filter and validate input data using PHP classes referenced in XML, allowing inputs to be passed through mapped PHP objects.</li>
+			<li>Apply validation rules to all or specific database interactions using parameter maps or mapped PHP classes.</li>
+			<li>Map query results to PHP objects using XML configuration, automatically converting database rows into fully mapped class instances.</li>
+			<li>Transform results into custom list structures via XML definitions, allowing attribute remapping or custom formats.</li>
+			<li>Filter and validate results using result maps or result classes - globally or for specific queries - to ensure structured and type-safe output.</li>
+		</ul>
+	</div>
 </div>';
 
 if (!$password) {

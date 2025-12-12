@@ -21,13 +21,30 @@ echo $style;
 echo '<h1>PHP Spring Lib - iBatis</h1>
 <p>Spring iBatis - create SQL statements in xml</p>
 <div class="note">
-		<span>
-		Learn how to use Spring iBatis in PHP, with SQL statements defined in XML files.<br/>
-		With this library, you can map SQL queries to PHP objects using XML-based configurations, where all your queries can be organized across multiple XML files.<br/>
-		The SQL statements can receive inputs that are automatically replaced in the query.<br/>
-		These inputs can be filtered and validated through a parameter map or class.<br/>
-		After the query is executed, the result can also be filtered using a result map or class.
-		</span>
+	<span>
+	Learn how to use Spring iBatis in PHP, with SQL statements defined in XML files.<br/>
+	With this library, you can map SQL queries results to PHP objects using XML-based configurations, where all your queries can be organized across multiple XML files.<br/>
+	The SQL statements can receive inputs that are automatically replaced in the query.<br/>
+	These inputs can be filtered and validated through a parameter map or class.<br/>
+	After the query is executed, the result can also be filtered using a result map or class.
+	</span>
+
+	<div class="features">
+		<h2>Features:</h2>
+		<ul>
+			<li>Map SQL queries to XML nodes for clean and structured query management.</li>
+			<li>Organize SQL queries across multiple XML files and folders.</li>
+			<li>Include SQL definition files inside other SQL files for modular configurations.</li>
+			<li>Group SQL queries by application modules, placing each module in its own XML file or folder, and load only the queries required for that module.</li>
+			<li>Separate SQL definitions from the database layer, allowing the same queries to be used across different DB engines.</li>
+			<li>Define input parameters for SQL queries, enabling reuse of the same query with different parameter sets.</li>
+			<li>Filter and validate query inputs using XML-defined parameter maps, where you can define custom attribute names and types.</li>
+			<li>Filter and validate query inputs using PHP classes referenced in XML, allowing inputs to be based on PHP objects.</li>
+			<li>Map query results to PHP objects through XML configuration, automatically converting DB rows into fully mapped class instances.</li>
+			<li>Transform query results into custom list structures using XML-based result configurations, converting DB rows into different formats or attribute mappings.</li>
+			<li>Filter and validate query results using result maps or result classes to enforce structured and type-safe output.</li> 
+		</ul>
+	</div>
 </div>';
 
 if (!$password) {

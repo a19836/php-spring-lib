@@ -25,6 +25,9 @@ p {margin:0 0 20px; text-align:center;}
 .note {text-align:center;}
 .note span {text-align:center; margin:0 20px 20px; padding:10px; color:#aaa; border:1px solid #ccc; background:#eee; display:inline-block; border-radius:3px;}
 
+.features {text-align:left; margin:20px; padding:0 20px 0 0; color:#aaa; border:1px solid #ccc; background:#eee; display:inline-block; border-radius:3px;}
+.features h2 {font-size:1.2em; margin:10px 0 0 10px; font-weight:bold;}
+
 .code {display:block; margin:10px 0; padding:0; background:#eee; border:1px solid #ccc; border-radius:3px; position:relative;}
 .code:before {content:"php"; position:absolute; top:5px; left:5px; display:block; font-size:80%; opacity:.5;}
 .code.output:before {content:"output";}

@@ -1,7 +1,7 @@
 # PHP Spring Lib
 
 > Original Repos:   
-> - PHP Spring Lib: https://github.com/a19836/phpspringlib/   
+> - PHP Spring Lib: https://github.com/a19836/php-spring-lib/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
